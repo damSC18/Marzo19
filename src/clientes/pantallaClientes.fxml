@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientes.controladorClientes">
+   <children>
+      <ToolBar layoutX="36.0" layoutY="28.0" prefHeight="64.0" prefWidth="835.0">
+         <items>
+            <Button mnemonicParsing="false" onAction="#nuevoRegistro">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/nuevo.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#grabarregistro">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/guardar2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#borrarRegistro">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/Borrar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#primerRegistro">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/4.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#anteriorRegisto">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/3.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#siguienteRegistro">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/2.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ultiimoRegistro">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/1.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="botonVisualizaRejilla" mnemonicParsing="false" onAction="#VisualizaRejilla" prefHeight="54.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/lista.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ImprimirPdf" prefHeight="51.0" prefWidth="61.0">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/impresoras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="botonEscandallos1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#salirClientes" opacity="0.5" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: black;" text="Salir " textAlignment="CENTER" textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </items>
+      </ToolBar>
+      <Label layoutX="65.0" layoutY="117.0" text="Códiigo Cliente" />
+      <Label layoutX="66.0" layoutY="176.0" text="Nombre" />
+      <Label layoutX="66.0" layoutY="228.0" text="Dirección" />
+      <Label layoutX="62.0" layoutY="280.0" text="Poblacion" />
+      <Label layoutX="64.0" layoutY="334.0" text="Provincia" />
+      <Label layoutX="64.0" layoutY="393.0" text="Código Postal" />
+      <Label layoutX="64.0" layoutY="451.0" text="Cif/Nif" />
+      <Label layoutX="371.0" layoutY="518.0" text="Telefono 2" />
+      <Label layoutX="64.0" layoutY="509.0" text="Telefono 2" />
+      <Label layoutX="65.0" layoutY="561.0" text="Email" />
+      <Label layoutX="67.0" layoutY="618.0" text="Web" />
+      <Label layoutX="67.0" layoutY="668.0" text="Persona Contacto" />
+      <Label layoutX="69.0" layoutY="712.0" text="Sector Comercial" />
+      <TextField fx:id="id" layoutX="254.0" layoutY="122.0" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="nombre" layoutX="251.0" layoutY="181.0" prefHeight="25.0" prefWidth="456.0" />
+      <TextField fx:id="direccion" layoutX="250.0" layoutY="233.0" prefHeight="25.0" prefWidth="497.0" />
+      <TextField fx:id="poblacion" layoutX="249.0" layoutY="285.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="provincia" layoutX="249.0" layoutY="339.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextField fx:id="codigoPostal" layoutX="249.0" layoutY="401.0" prefHeight="25.0" prefWidth="68.0" promptText="#####" />
+      <TextField fx:id="cif_Nif" layoutX="247.0" layoutY="459.0" prefHeight="25.0" prefWidth="119.0" promptText="########A" />
+      <TextField fx:id="telefono2" layoutX="457.0" layoutY="514.0" prefHeight="25.0" prefWidth="103.0" />
+      <TextField fx:id="telefono1" layoutX="243.0" layoutY="517.0" prefHeight="25.0" prefWidth="103.0" />
+      <TextField fx:id="email" layoutX="245.0" layoutY="569.0" prefHeight="25.0" prefWidth="468.0" promptText="sample@sampple.ext" />
+      <TextField fx:id="web" layoutX="245.0" layoutY="618.0" prefHeight="25.0" prefWidth="507.0" />
+      <TextField fx:id="personaContacto" layoutX="244.0" layoutY="673.0" prefHeight="25.0" prefWidth="456.0" />
+      <TextField fx:id="sectorComercial" layoutX="245.0" layoutY="720.0" prefHeight="25.0" prefWidth="311.0" />
+      <WebView fx:id="webb" layoutX="1004.0" layoutY="198.0" prefHeight="200.0" prefWidth="184.0" />
+      <Pane fx:id="PanelBusqueda" layoutX="509.0" layoutY="328.0" prefHeight="107.0" prefWidth="370.0">
+         <children>
+            <Button fx:id="SigBusca" layoutX="243.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#SigBuscar" text="Sig." />
+            <Button fx:id="AntBusca" layoutX="307.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#AntBuscar" text="Ant." />
+            <Button fx:id="FinalBusca" layoutX="243.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#FinalizarBuscar" prefHeight="25.0" prefWidth="98.0" text="Finalizar" />
+            <ComboBox fx:id="listacamposBuscar" editable="true" layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="188.0" promptText="Campos Tabla" />
+            <TextField fx:id="PalabraBuscador" layoutX="9.0" layoutY="69.0" prefHeight="25.0" prefWidth="188.0" />
+            <Label layoutX="9.0" layoutY="2.0" prefHeight="25.0" prefWidth="223.0" text="Búsqueda de Registros" textFill="#ff3333" textOverrun="LEADING_ELLIPSIS" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- comentarios -->
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal">
+   <children>
+      <Pane layoutX="42.0" layoutY="48.0" prefHeight="300.0" prefWidth="506.0" style="-fx-background-color: rgb(40,100,100);">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <children>
+            <Label fx:id="etiqueta" layoutX="53.0" layoutY="23.0" prefHeight="62.0" prefWidth="377.0" text="Prueba de JavaFX">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#a241abed" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="40.0" layoutY="122.0" mnemonicParsing="false" onAction="#pulsame" prefHeight="71.0" prefWidth="384.0" text="Pulsame" textAlignment="RIGHT">
+               <font>
+                  <Font name="Ebrima Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
